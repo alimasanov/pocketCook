@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginBottom="16dp"
+    tools:context="com.pocketcook.alim.pocketcook.FragmentActivitySettingsRecipeAdd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите название" />
+
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <Button
+            android:id="@+id/add_ingr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="выбрать ингридиенты" />
+
+        <Button
+            android:id="@+id/add_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="выбрать изображение" />
+
+        <View
+            android:layout_margin="3dp"
+            android:layout_height="0.5dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorBlack">
+        </View>
+
+        <com.wrapp.floatlabelededittext.FloatLabeledEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edit_text_prepare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Опишите приготовление"
+                android:lines="10"
+                android:gravity="left|top"/>
+        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+        <Button
+            android:id="@+id/add_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="добавить рецепт" />
+    <Button
+            android:id="@+id/read_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="вывести рецепт" />
+    </LinearLayout>
+</FrameLayout>
