@@ -24,7 +24,7 @@ public class IngridAdapterAdd extends RecyclerView.Adapter<IngridAdapterAdd.Ingr
     public IngrViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //inflating and returning our view holder
         LayoutInflater inflater = LayoutInflater.from(mCtx);
-        View view = inflater.inflate(R.layout.list_ingr_add, null);
+        View view = inflater.inflate(R.layout.card_ingr_add, null);
         return new IngrViewHolder(view);
     }
 

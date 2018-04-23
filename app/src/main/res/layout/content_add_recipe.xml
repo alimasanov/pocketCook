@@ -1,12 +1,15 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginBottom="16dp"
-    tools:context="com.pocketcook.alim.pocketcook.FragmentActivitySettingsRecipeAdd">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.pocketcook.alim.pocketcook.AddRecipe"
+    tools:showIn="@layout/activity_add_recipe"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -63,10 +66,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="добавить рецепт" />
-    <Button
-            android:id="@+id/read_recipe"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="вывести рецепт" />
     </LinearLayout>
-</FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

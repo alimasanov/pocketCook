@@ -69,7 +69,7 @@ public class ActivitySettingsActivity extends AppCompatActivity
                             public void onBoomButtonClick(int index) {
 
                                 Intent intent = new Intent(ActivitySettingsActivity.this,
-                                        ActivitySettingsRecipe.class);
+                                        AddRecipe.class);
                                 startActivity(intent);
 
                             }
@@ -86,7 +86,7 @@ public class ActivitySettingsActivity extends AppCompatActivity
                             public void onBoomButtonClick(int index) {
 
                                 Intent intent = new Intent(ActivitySettingsActivity.this,
-                                        ActivitySettingsIngridient.class);
+                                        AddRecipe.class);
                                 startActivity(intent);
 
                             }

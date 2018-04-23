@@ -34,18 +34,10 @@
             android:name=".ActivityAboutActivity"
             android:label="@string/about_title"
             android:theme="@style/AppTheme" />
-        <activity
-            android:name=".ActivitySettingsRecipe"
-            android:label="@string/settings_title"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".ActivitySettingsIngridient"
-            android:label="@string/title_activity_settings_ingridient"
-            android:theme="@style/AppTheme" />
         <activity android:name=".ActivityIngrAdd" />
         <activity
-            android:name=".ScrollingActivity"
-            android:label="@string/title_activity_scrolling"
+            android:name=".AddRecipe"
+            android:label="@string/title_activity_add_recipe"
             android:theme="@style/AppTheme"></activity>
     </application>
 

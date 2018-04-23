@@ -77,7 +77,7 @@ public class ActivityFridgeActivity extends AppCompatActivity
                             public void onBoomButtonClick(int index) {
 
                                 Intent intent = new Intent(ActivityFridgeActivity.this,
-                                        ActivitySettingsRecipe.class);
+                                        AddRecipe.class);
                                 startActivity(intent);
 
                             }
@@ -94,7 +94,7 @@ public class ActivityFridgeActivity extends AppCompatActivity
                             public void onBoomButtonClick(int index) {
 
                                 Intent intent = new Intent(ActivityFridgeActivity.this,
-                                        ActivitySettingsIngridient.class);
+                                        AddRecipe.class);
                                 startActivity(intent);
 
                             }
