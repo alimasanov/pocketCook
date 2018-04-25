@@ -4,8 +4,6 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -14,7 +12,7 @@ import android.widget.EditText;
 
 public class AddRecipe extends AppCompatActivity {
 
-    RecipeDBHelper recipeDBHelper;
+    DBHelper dbHelper;
     EditText etn;
     EditText etp;
 
@@ -37,7 +35,7 @@ public class AddRecipe extends AppCompatActivity {
         etn = (EditText) findViewById(R.id.edit_text_name);
         etp = (EditText) findViewById(R.id.edit_text_prepare);
 
-        recipeDBHelper = new RecipeDBHelper(this);
+        dbHelper = new DBHelper(this);
         Button btnAdd = findViewById(R.id.add_recipe);
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,13 +43,13 @@ public class AddRecipe extends AppCompatActivity {
                 String name = etn.getText().toString();
                 String prepare = etp.getText().toString();
 
-                SQLiteDatabase sqLiteDatabase = recipeDBHelper.getReadableDatabase();
+                SQLiteDatabase sqLiteDatabase = dbHelper.getReadableDatabase();
                 ContentValues contentValues = new ContentValues();
 
                 contentValues.put(Recipe.RecipeEntry.COLUMN_NAME, name);
 
                 sqLiteDatabase.insert(Recipe.RecipeEntry.TABLE_NAME, null, contentValues);
-                recipeDBHelper.close();
+                dbHelper.close();
             }
         });
     }

@@ -1,44 +1,13 @@
 package com.pocketcook.alim.pocketcook;
 
+import android.provider.BaseColumns;
+
 public class Ingridient {
-    private String nameOfIngridient;
-    private String unit;
-    private double count;
-
-
-    public Ingridient(String nameOfIngridient, String unit, double count) {
-        this.nameOfIngridient = nameOfIngridient;
-        this.unit = unit;
-        this.count = count;
-    }
-
-    public void setCount(double count) {
-        this.count = count;
-    }
-
-    public double getCount() {
-
-        return count;
-    }
-
-    @Override
-    public String toString() {
-        return "" + count;
-    }
-
-    public void setNameOfIngridient(String nameOfIngridient) {
-        this.nameOfIngridient = nameOfIngridient;
-    }
-
-    public void setUnit(String unit) {
-        this.unit = unit;
-    }
-
-    public String getNameOfIngridient() {
-        return nameOfIngridient;
-    }
-
-    public String getUnit() {
-        return unit;
+    public static final class IngridientEntry implements BaseColumns {
+        public static final String TABLE_NAME = "ingridientList";
+        public static final String COLUMN_NAME = "name";
+        public static final String COLUMN_COUNT = "count";
+        public static final String COLUMN_UNIT = "unit";
+        public static final String COLUMN_TIMESTAMP = "timestamp";
     }
 }

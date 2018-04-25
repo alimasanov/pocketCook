@@ -14,14 +14,10 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.MenuItem;
-import android.widget.EditText;
 
 import com.nightonke.boommenu.BoomButtons.OnBMClickListener;
 import com.nightonke.boommenu.BoomButtons.TextOutsideCircleButton;
 import com.nightonke.boommenu.BoomMenuButton;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ActivityMenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -47,7 +43,7 @@ public class ActivityMenuActivity extends AppCompatActivity
     }
 
     private void dbOnRV() {
-        RecipeDBHelper dbHelper = new RecipeDBHelper(this);
+        DBHelper dbHelper = new DBHelper(this);
         mDatabase = dbHelper.getWritableDatabase();
 
         RecyclerView recyclerView = findViewById(R.id.RV_recipe_menu);
