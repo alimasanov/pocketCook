@@ -152,54 +152,54 @@ public class ActivityFridgeActivity extends AppCompatActivity
 
 
         //adding some items to our list
-        ingrList.add(new Ingridient("1 ингридиент", "грамм" , 50));
-        ingrList.add(
-                new Ingridient("2 ингридиент", "килограмм" , 5));
-        ingrList.add(
-                new Ingridient("3 ингридиент", "шт" , 10));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-        ingrList.add(
-                new Ingridient("4 ингридиент", "грамм" , 500));
-
+//        ingrList.add(new Ingridient("1 ингридиент", "грамм" , 50));
+//        ingrList.add(
+//                new Ingridient("2 ингридиент", "килограмм" , 5));
+//        ingrList.add(
+//                new Ingridient("3 ингридиент", "шт" , 10));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//        ingrList.add(
+//                new Ingridient("4 ингридиент", "грамм" , 500));
+//
 
 
         //creating recyclerview adapter

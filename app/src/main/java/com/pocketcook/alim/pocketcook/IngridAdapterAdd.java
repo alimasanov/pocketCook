@@ -34,8 +34,8 @@ public class IngridAdapterAdd extends RecyclerView.Adapter<IngridAdapterAdd.Ingr
         ingridient = ingrList.get(position);
 
         //binding the data with the viewholder views
-        holder.textViewTitle.setText(ingridient.getNameOfIngridient());
-        holder.unit.setText(ingridient.getUnit());
+//        holder.textViewTitle.setText(ingridient.getNameOfIngridient());
+//        holder.unit.setText(ingridient.getUnit());
     }
 
     @Override
@@ -53,8 +53,8 @@ public class IngridAdapterAdd extends RecyclerView.Adapter<IngridAdapterAdd.Ingr
         public IngrViewHolder(View itemView) {
             super(itemView);
 
-            textViewTitle = itemView.findViewById(R.id.textViewTitleIngrAdd);
-            unit = itemView.findViewById(R.id.unitAdd);
+//            textViewTitle = itemView.findViewById(R.id.textViewTitleIngrAdd);
+//            unit = itemView.findViewById(R.id.unitAdd);
         }
     }
 }

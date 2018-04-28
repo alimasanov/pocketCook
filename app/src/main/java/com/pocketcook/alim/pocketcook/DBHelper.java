@@ -37,21 +37,26 @@ public class DBHelper extends SQLiteOpenHelper{
         final String SQL_CREATE_RECIPEINGRLIST_TABLE = "CREATE TABLE " +
                 RecipeIngridientEntry.TABLE_NAME + " (" +
                 RecipeIngridientEntry.COLUMN_INGRIDIENT_ID + " INTEGER NOT NULL, " +
-                RecipeIngridientEntry.COLUMN_RECIPE_ID + " INTEGER NOT NULL, PRIMARY KEY(" +
-                RecipeIngridientEntry.COLUMN_INGRIDIENT_ID + ", " +
-                RecipeIngridientEntry.COLUMN_RECIPE_ID + "), FOREIGN KEY (" +
-                RecipeIngridientEntry.COLUMN_INGRIDIENT_ID + ") REFERENCES " +
-                IngridientEntry.TABLE_NAME + ", FOREIGN KEY (" +
-                RecipeIngridientEntry.COLUMN_RECIPE_ID + ") REFERENCES " +
-                RecipeEntry.TABLE_NAME + ",);";
-
+                RecipeIngridientEntry.COLUMN_RECIPE_ID + " INTEGER NOT NULL, " +
+                "PRIMARY KEY(" + RecipeIngridientEntry.COLUMN_INGRIDIENT_ID + ", " +
+                            RecipeIngridientEntry.COLUMN_RECIPE_ID + "), " +
+                "FOREIGN KEY (" + RecipeIngridientEntry.COLUMN_INGRIDIENT_ID + ") REFERENCES " +
+                            IngridientEntry.TABLE_NAME + ", " +
+                "FOREIGN KEY (" + RecipeIngridientEntry.COLUMN_RECIPE_ID + ") REFERENCES " +
+                            RecipeEntry.TABLE_NAME + "," +
+                RecipeIngridientEntry._ID + " INTEGER PRIMARY KEY AUTOINKREMENT" +
+                ");";
 
         db.execSQL(SQL_CREATE_RECIPELIST_TABLE);
+        db.execSQL(SQL_CREATE_INGRLIST_TABLE);
+        db.execSQL(SQL_CREATE_RECIPEINGRLIST_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS " + RecipeEntry.TABLE_NAME + IngridientEntry.TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + RecipeEntry.TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + IngridientEntry.TABLE_NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + RecipeIngridientEntry.TABLE_NAME);
 
         onCreate(db);
     }
